@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LazOff_App.ApagarTarefaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+            BackgroundColor="#161125" HeightRequest="50000">
+                <StackLayout Margin="15,100,15,100" >
+                    <Label Text="Tem certeza que deseja apagar a Tarefa Faculdade?" TextColor="White" FontSize="25" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Padding="35" Spacing="5">
+                    <Image Source="ExclamationMark.png" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Padding="40" Spacing="50">
+                    <Button Text="Apagar Lista" BackgroundColor="#161125" BorderWidth="5"  BorderColor="White" TextColor="White" CornerRadius="15"  HorizontalOptions="Center" WidthRequest="20000000"  />
+                </StackLayout>
+                <StackLayout Padding="40" Spacing="50">
+                    <Button Text="Cancelar" BackgroundColor="#6D5DCF" TextColor="White" CornerRadius="8"  HorizontalOptions="Center" WidthRequest="20000000"  Clicked="VoltarListarTarefa_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

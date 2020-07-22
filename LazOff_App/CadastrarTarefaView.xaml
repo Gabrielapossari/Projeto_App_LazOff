@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LazOff_App.CadastrarTarefaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout  >
+                <StackLayout BackgroundColor="#6D5DCF" HeightRequest="150" WidthRequest="100">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5" >
+                        <Label Text="Sprint" FontSize="20" TextColor="White" ></Label>
+                    </StackLayout>
+                    <StackLayout  Orientation="Horizontal" Padding="20" VerticalOptions="Center"  HorizontalOptions="Center">
+                        <Image Source="calendar.webp" WidthRequest="15" />
+                        <Label Text="Jul 15 a Jul 18" FontSize="15" TextColor="White" />
+                        <Image Source="circlered.png" WidthRequest="10"/>
+                        <Label Text="Trabalho" FontSize="15" TextColor="White" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox Color="Gray"  />
+                        <Label Text="Jsx home page" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+                        <ImageButton Source="circle.webp" WidthRequest="0" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="DeletarTarefa_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Padding="5,10">
+                    <Editor
+                    AutoSize="TextChanges"
+                        MaxLength="200"
+                       IsSpellCheckEnabled="false"
+                       IsTextPredictionEnabled="false"  
+                        HeightRequest="200" WidthRequest="200">
+                        <Editor.BackgroundColor>
+                            <OnPlatform x:TypeArguments="d:Color">
+                                <On Platform="Android, UWP" Value="White" />
+                            </OnPlatform>
+                        </Editor.BackgroundColor>
+                    </Editor>
+                </StackLayout>
+                <StackLayout>
+                    <Button  ImageSource="calendarn.png"  BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  Text="Data"  WidthRequest="200"/>
+                </StackLayout>
+                <StackLayout>
+                    <Button Text = "Salvar Tarefa" BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  TextColor="Black"  WidthRequest="200"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

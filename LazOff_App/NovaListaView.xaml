@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LazOff_App.NovaListaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                  BackgroundColor="#6D5DCF"
+             HeightRequest="250"
+             WidthRequest="100"
+             >
+                <Image
+                    Source="search.png"
+                    WidthRequest="30"
+                    HorizontalOptions="EndAndExpand"
+                    Margin="30,30,20,0"
+                    />
+                <Label Text="Cronograma"  
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="White"
+                       FontSize="25"/>
+                <Label Text="Segunda, 14 de Junho"
+                       HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                        TextColor="White"              
+                       FontSize="15"/>
+            </StackLayout>
+            <StackLayout
+                >
+                <Button Text="+ Nova Lista"
+                       HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                        TextColor="White"              
+                       FontSize="15"
+                         BackgroundColor="#9d81e4"
+                Padding="0"
+             HeightRequest="40"
+             WidthRequest="500"/>
+            </StackLayout>
+            <StackLayout  
+                   Padding="60" 
+                Spacing="30" >
+                <Image
+                    Source="aaa.png"
+                    WidthRequest="120"
+                    
+                    />
+                <Label Text="Vazio aqui né!"
+                       TextColor="#6D5DCF"
+                       FontSize="25"       
+                       />
+                <Label Text="Arraste pra baixo e crie uma nova lista."
+                        TextColor="Black" 
+                       FontSize="15"/>
+            </StackLayout>
+            <StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
