@@ -1,9 +1,9 @@
-﻿using LazOff_App.View;
+﻿using Lazyoff_App.View;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LazOff_App
+namespace Lazyoff_App
 {
     public partial class App : Application
     {

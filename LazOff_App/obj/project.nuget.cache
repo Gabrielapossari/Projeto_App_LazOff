@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "A3HZlELTw98I1EPY9W+9vb6TXYMhaYGtLW+eW/c69AkUfZ+74wQOoK586GIfR7/4NGn9DvfizezA4JYC95ngiA==",
+  "dgSpecHash": "dzek6vTMae72QMYbrQrx9HIJu4U2Qp5T0xlnpyFwM1ghzr7MndKC8ULpAfb9/ODWJTbNjj6EXEpMAaRVO4hcPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GABRIELA\\Documents\\AppToDo\\LazOff_App\\LazOff_App\\LazOff_App.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Documents\\Repos\\Projeto_App_LazOff\\LazOff_App\\LazOff_App.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\GABRIELA\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\GABRIELA\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\GABRIELA\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.CadastrarCategoriaView.xaml", "CadastrarCategoriaView.xaml", typeof(global::LazOff_App.CadastrarCategoriaView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.CadastrarCategoriaView.xaml", "CadastrarCategoriaView.xaml", typeof(global::Lazyoff_App.CadastrarCategoriaView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("CadastrarCategoriaView.xaml")]

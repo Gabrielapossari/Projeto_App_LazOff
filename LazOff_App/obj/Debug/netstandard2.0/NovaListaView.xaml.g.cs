@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.NovaListaView.xaml", "NovaListaView.xaml", typeof(global::LazOff_App.NovaListaView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.NovaListaView.xaml", "NovaListaView.xaml", typeof(global::Lazyoff_App.NovaListaView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NovaListaView.xaml")]

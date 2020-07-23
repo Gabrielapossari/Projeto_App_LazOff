@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LazOff_App.View.MostrarListaView"
+             x:Class="Lazyoff_App.View.MostrarListaView"
                Title="MostrarLista">
     <ContentPage.Content>
         <StackLayout>
@@ -25,7 +25,7 @@
                                         VerticalOptions="CenterAndExpand"
                        TextColor="White"
                        FontSize="25"/>
-                <Label Text="Segunda, 14 de Junho"
+                <Label Text="{Binding DiaTratado}"
                        HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="CenterAndExpand"
                         TextColor="White"              

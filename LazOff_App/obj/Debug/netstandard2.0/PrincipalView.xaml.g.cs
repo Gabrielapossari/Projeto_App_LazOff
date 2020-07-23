@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.PrincipalView.xaml", "PrincipalView.xaml", typeof(global::LazOff_App.PrincipalView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.PrincipalView.xaml", "PrincipalView.xaml", typeof(global::Lazyoff_App.PrincipalView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("PrincipalView.xaml")]
     public partial class PrincipalView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button buttonDo;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PrincipalView));
+            buttonDo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "buttonDo");
         }
     }
 }

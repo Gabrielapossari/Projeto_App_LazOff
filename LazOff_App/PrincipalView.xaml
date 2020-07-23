@@ -4,73 +4,63 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LazOff_App.PrincipalView">
+             x:Class="Lazyoff_App.PrincipalView">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
-                  BackgroundColor="#6D5DCF"
-             HeightRequest="250"
-             WidthRequest="100"
+             BackgroundColor="#6D5DCF"
+             HeightRequest="200"
+             WidthRequest="50"
              >
                 <ImageButton
                     Source="search.png"
                     WidthRequest="30"
                     HorizontalOptions="EndAndExpand"
-                    Margin="30,30,20,0"
+                    Margin="30,30,20,10"
                     Clicked="Pesquisar_Clicked"
                     BackgroundColor="Transparent"
                     />
-                <Label Text="Cronograma"  
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       TextColor="White"
-                       FontSize="25"/>
-                <Label Text="Segunda, 14 de Junho"
-                       HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="CenterAndExpand"
-                        TextColor="White"              
-                       FontSize="15"/>
+                <StackLayout
+                    Padding="10"
+                    >
+                    <Label Text="Cronograma"  
+                           TextColor="White"
+                           FontSize="25"/>
+                    <Label Text="{Binding DiaTratado}"
+                           TextColor="White"              
+                           FontSize="15"/>
+                </StackLayout>
+                
             </StackLayout>
             <StackLayout
                 >
                 <Button Text="+ Nova Lista"
-                       HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
                         TextColor="White"              
-                       FontSize="15"
-                         BackgroundColor="#9d81e4"
-                Padding="0"
-             HeightRequest="40"
-             WidthRequest="500" Clicked="btnCadastrarLista_Clicked"/>
+                        FontSize="15"
+                        BackgroundColor="#9d81e4"
+                        Padding="0"
+                        HeightRequest="40"
+                        WidthRequest="500" Clicked="btnCadastrarLista_Clicked"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="15" >
-                <CheckBox Color="Gray" BackgroundColor="Transparent" HorizontalOptions="Center" />
-                <Frame BackgroundColor="#ebedf0" CornerRadius="800" HorizontalOptions="Center" WidthRequest="400" HeightRequest="40" Padding="10">
-                    <Button Text="Comprar Remédio" TextColor="Black" BorderColor="#6D5DCF" BorderWidth="5" BackgroundColor="#ebedf0" Padding="5"  WidthRequest="300" HeightRequest="50" CornerRadius="10" Clicked="btnMostrarLista_Clicked"/>
-                </Frame>
-                <ImageButton Source="circle.webp" WidthRequest="30" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="btnDeletarLista_Clicked"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="15" >
-                <CheckBox Color="Gray" BackgroundColor="Transparent" HorizontalOptions="Center" />
-                <Frame BackgroundColor="#ebedf0" CornerRadius="800" HorizontalOptions="Center" WidthRequest="400" HeightRequest="40" Padding="10">
-                    <Button Text="Comprar Remédio" TextColor="Black" BorderColor="#6D5DCF" BorderWidth="5" BackgroundColor="#ebedf0" Padding="5"  WidthRequest="300" HeightRequest="50" CornerRadius="10" Clicked="btnMostrarLista_Clicked"/>
-                </Frame>
-                <ImageButton Source="circle.webp" WidthRequest="30" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="btnDeletarLista_Clicked"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="15" >
-                <CheckBox Color="Gray" BackgroundColor="Transparent" HorizontalOptions="Center" />
-                <Frame BackgroundColor="#ebedf0" CornerRadius="800" HorizontalOptions="Center" WidthRequest="400" HeightRequest="40" Padding="10">
-                    <Button Text="Comprar Remédio" TextColor="Black" BorderColor="#6D5DCF" BorderWidth="5" BackgroundColor="#ebedf0" Padding="5"  WidthRequest="300" HeightRequest="50" CornerRadius="10" Clicked="btnMostrarLista_Clicked"/>
-                </Frame>
-                <ImageButton Source="circle.webp" WidthRequest="30" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="btnDeletarLista_Clicked"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="15" >
-                <CheckBox Color="Gray" BackgroundColor="Transparent" HorizontalOptions="Center" />
-                <Frame BackgroundColor="#ebedf0" CornerRadius="800" HorizontalOptions="Center" WidthRequest="400" HeightRequest="40" Padding="10">
-                    <Button Text="Comprar Remédio" TextColor="Black" BorderColor="#6D5DCF" BorderWidth="5" BackgroundColor="#ebedf0" Padding="5"  WidthRequest="300" HeightRequest="50" CornerRadius="10" Clicked="btnMostrarLista_Clicked"/>
-                </Frame>
-                <ImageButton Source="circle.webp" WidthRequest="30" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="btnDeletarLista_Clicked"/>
-            </StackLayout>
+            
+            <ScrollView>
+                <StackLayout
+                        Padding="10">
+                    <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                        <CheckBox Grid.Row="0" Grid.RowSpan="2" Margin="20, 0, 50, 0" Color="Gray" />
+                        <Label Grid.Row="0" Grid.RowSpan="3" Padding="60, 15, 0, 0" HorizontalOptions="StartAndExpand" Text="AAAAAAAAATESTE" TextColor="#9d81e4" FontSize="18"/>
+                        <Button Grid.Row="0" Grid.RowSpan="3"
+                                x:Name="buttonDo" BackgroundColor="Transparent"/>
+                        <ImageButton Grid.Row="0" Grid.RowSpan="2" Padding="11" Source="circle.webp" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" Clicked="btnDeletarLista_Clicked"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

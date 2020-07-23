@@ -4,19 +4,28 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LazOff_App.CadastrarListaView">
+             x:Class="Lazyoff_App.CadastrarListaView">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout BackgroundColor="#6D5DCF" HeightRequest="150" WidthRequest="100">
-                <Label Text="Dê o nome pra sua nova lista." FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Padding="55"></Label>
+            
+            <StackLayout BackgroundColor="#6D5DCF"
+                         HeightRequest="150"
+                         WidthRequest="100">
+                <Label Text="Dê o nome pra sua nova lista." 
+                       FontSize="20"
+                       TextColor="White"
+                       Padding="20, 60, 0, 0"
+                       HorizontalOptions="Fill" VerticalOptions="Center"
+                       />
             </StackLayout>
+            
             <StackLayout Padding="5,10">
                 <Editor
-                    AutoSize="TextChanges"
+                        AutoSize="TextChanges"
                         MaxLength="200"
-                       IsSpellCheckEnabled="false"
-                       IsTextPredictionEnabled="false"  
-                        HeightRequest="300" WidthRequest="300">
+                        IsSpellCheckEnabled="false"
+                        IsTextPredictionEnabled="false"  
+                        HeightRequest="250" WidthRequest="200">
                     <Editor.BackgroundColor>
                         <OnPlatform x:TypeArguments="d:Color">
                             <On Platform="Android, UWP" Value="White" />
@@ -24,15 +33,17 @@
                     </Editor.BackgroundColor>
                 </Editor>
             </StackLayout>
+            
             <StackLayout>
-                <Button  ImageSource="calendarn.png"  BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  Text="Data"  WidthRequest="200"/>
+                <Button  ImageSource="calendarn.png"  BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  Text="Data" TextColor="White" BackgroundColor="MediumPurple" WidthRequest="200"/>
             </StackLayout>
             <StackLayout>
-                <Button  ImageSource="tagn.png"  BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  Text="Categoria"  WidthRequest="200" Clicked="btnCadastrarCategoria_Clicked"/>
+                <Button  ImageSource="tagn.png"  BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  Text="Categoria" TextColor="White" BackgroundColor="MediumPurple" WidthRequest="200" Clicked="btnCadastrarCategoria_Clicked"/>
             </StackLayout>
             <StackLayout>
-                <Button Text = "Salvar Lista" BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8"  TextColor="Black"  WidthRequest="200"/>
+                <Button                          BorderWidth="5"  BorderColor="#6D5DCF"  CornerRadius="8" Text="Salvar lista" TextColor="White" BackgroundColor="MediumPurple" WidthRequest="200"/>
             </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

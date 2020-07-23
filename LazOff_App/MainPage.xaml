@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms" 
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                        xmlns:local="clr-namespace:LazOff_App;assembly=LazOff_App" 
+                        xmlns:local="clr-namespace:Lazyoff_App;assembly=Lazyoff_App" 
                         xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
                         android:TabbedPage.ToolbarPlacement="Bottom"
                         android:TabbedPage.BarItemColor="#6D5DCF"
                         BarTextColor="#6D5DCF"
-                        x:Class="LazOff_App.MainPage">
+                        x:Class="Lazyoff_App.MainPage">
     <local:PrincipalView Title="Home" Icon="house.webp" />
     <local:ListarCategoriasView Title="Categoria" Icon="tagg.png"/>
     <local:PesquisarView Title="Pesquisar" Icon="navigationbar.png"/>

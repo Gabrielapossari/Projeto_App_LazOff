@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LazOff_App
+namespace Lazyoff_App
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CadastrarCategoriaView : ContentPage

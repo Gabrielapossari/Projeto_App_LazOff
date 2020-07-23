@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace LazOff_App.ViewModels
+namespace Lazyoff_App.ViewModels
 {
      public class MainViewModels : INotifyPropertyChanged
     {
@@ -48,8 +48,7 @@ namespace LazOff_App.ViewModels
             {
                 return _pesquisaCommand ?? (_pesquisaCommand = new Command(() =>
                 {
-
-                    //Aqui vai o que voce quer fazer com a pesquisa
+                    // aqui vai o que voce quer fazer com a pesquisa
                 }));
             }
         }

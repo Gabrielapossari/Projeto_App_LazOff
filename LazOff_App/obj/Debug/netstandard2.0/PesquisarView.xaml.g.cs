@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.PesquisarView.xaml", "PesquisarView.xaml", typeof(global::LazOff_App.PesquisarView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.PesquisarView.xaml", "PesquisarView.xaml", typeof(global::Lazyoff_App.PesquisarView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("PesquisarView.xaml")]

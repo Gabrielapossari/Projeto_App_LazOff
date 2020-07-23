@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lazyoff_App.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LazOff_App.View
+namespace Lazyoff_App.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MostrarListaView : ContentPage
@@ -15,7 +16,7 @@ namespace LazOff_App.View
         public MostrarListaView()
         {
             InitializeComponent();
-
+            this.BindingContext = new MostrarListaViewModel();
         }
     }
 }

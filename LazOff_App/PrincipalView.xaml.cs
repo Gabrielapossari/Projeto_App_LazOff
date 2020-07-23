@@ -1,4 +1,5 @@
-﻿using LazOff_App.View;
+﻿using Lazyoff_App.View;
+using Lazyoff_App.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LazOff_App
+namespace Lazyoff_App
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PrincipalView : ContentPage
@@ -16,14 +17,12 @@ namespace LazOff_App
         public PrincipalView()
         {
             InitializeComponent();
-
-
+            this.BindingContext = new PrincipalViewModel();
         }
      
     private void btnDeletarLista_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new ApagarListaView());
-
+            Application.Current.MainPage = new NavigationPage(new ApagarListaView());
         }
        
         async void btnMostrarLista_Clicked(object sender, EventArgs e)

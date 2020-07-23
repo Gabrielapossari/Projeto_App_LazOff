@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.ApagarCategoriaView.xaml", "ApagarCategoriaView.xaml", typeof(global::LazOff_App.ApagarCategoriaView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.ApagarCategoriaView.xaml", "ApagarCategoriaView.xaml", typeof(global::Lazyoff_App.ApagarCategoriaView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ApagarCategoriaView.xaml")]

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LazOff_App.ApagarTarefaView.xaml", "ApagarTarefaView.xaml", typeof(global::LazOff_App.ApagarTarefaView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Lazyoff_App.ApagarTarefaView.xaml", "ApagarTarefaView.xaml", typeof(global::Lazyoff_App.ApagarTarefaView))]
 
-namespace LazOff_App {
+namespace Lazyoff_App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ApagarTarefaView.xaml")]
